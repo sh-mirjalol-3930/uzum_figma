@@ -1,0 +1,40 @@
+.s1 {
+    .banner {
+        display: flex;
+        justify-content: space-around;
+        background-image: url(../assets/icons/banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+        .row {
+            display: flex;
+            gap: 1100px;
+            justify-content: space-between;
+            align-items: center;
+            button:first-child {
+                background-color: transparent;
+                border: none;
+                transform: rotate(0deg);
+            }
+            button {
+                background-color: transparent;
+                border: none;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .yana {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        button {
+            border-radius: 10px;
+            padding: 15px 150px;
+            margin: 0 auto;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #f2f4f7;
+            border: none;
+        }
+    }
+}

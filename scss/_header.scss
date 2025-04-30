@@ -1,0 +1,104 @@
+header {
+    .hd1 {
+        background-color: #f2f4f7;
+        padding: 5px 0;
+        list-style: none;
+        gap: 10px;
+        .row {
+            gap: 15px;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+    .hd2 {
+        margin-top: 15px;
+        .row1 {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 10px;
+            border: none;
+            color: #7000ff;
+            border-radius: 5px;
+            background-color: #f0f0ff;
+            margin-left: 30px;
+        }
+        .search {
+            width: 500px;
+            display: flex;
+            border: 1px solid #d7d7d9;
+            border-radius: 5px;
+            overflow: hidden;
+            input {
+                width: 100%;
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: none;
+            }
+            button {
+                background-color: #f2f4f7;
+                border: none;
+                display: flex;
+                padding: 10px 30px;
+                border-radius: 0px;
+                margin: 0;
+            }
+            &:hover {
+                box-shadow: 0 5px 10px #6f00ff44;
+            }
+        }
+        .row {
+            margin-left: auto;
+            button {
+                background-color: transparent;
+                margin: 0;
+                padding: 5px 20px;
+                color: black;
+            }
+        }
+    }
+    .hd3 {
+        margin-top: 20px;
+        .row {
+            b {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-weight: 600;
+                color: #1f2026;
+            }
+            nav {
+                ul {
+                    list-style: none;
+                    gap: 15px;
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: #595b66;
+                            font-weight: 500;
+                            font-size: 14px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+            p {
+                color: #595b66;
+                display: flex;
+                b {
+                    transform: rotate(90deg);
+                    color: #595b66;
+                    margin-left: 5px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}

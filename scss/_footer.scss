@@ -1,0 +1,28 @@
+footer {
+    // padding: 20px 0;
+    .row {
+        // padding: 50px 0;
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p {
+                color: #8b8e99;
+            }
+        }
+    }
+    .bottom {
+        align-items: center;
+        font-size: 15px;
+        padding: 20px 0;
+        border-top: 1px solid #8b8e99;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        p {
+            color: #8b8e99;
+        }
+    }
+}

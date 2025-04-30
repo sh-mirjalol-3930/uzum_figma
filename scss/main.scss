@@ -1,0 +1,24 @@
+@import "_header.scss";
+@import "_banner.scss";
+@import "_footer.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.5s ease;
+}
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+button:hover {
+    box-shadow: 0 5px 10px #6f00ff44;
+}
