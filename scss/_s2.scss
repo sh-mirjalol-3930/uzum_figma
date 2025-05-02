@@ -1,0 +1,51 @@
+.s2 {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        .card {
+            padding: 20px;
+            width: 280px;
+            border-radius: 20px;
+            img {
+                width: 300px;
+                margin-left: -30px;
+            }
+            b {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            p {
+                color: rgba(0, 0, 0, 0.712);
+                border-top: 1px solid rgba(0, 0, 0, 0);
+                padding: 10px 0;
+                margin-top: 5px;
+            }
+            &:hover {
+                box-shadow: 0 0 50px #0002;
+                img {
+                    scale: 1.1;
+                }
+                p {
+                    color: rgba(0, 0, 0, 0.712);
+                    border-top: 1px solid #0002;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+    .yana {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        button {
+            border-radius: 10px;
+            padding: 15px 150px;
+            margin: 0 auto;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #f2f4f7;
+            border: none;
+        }
+    }
+}

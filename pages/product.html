@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body class="product">
+        <div class="container">
+            <div class="wrapper">
+                <a href="../index.html"> < back</a>
+            </div>
+        </div>
+
+        <script>
+            const wrap = document.querySelector(".wrapper");
+            const API = "https://dummyjson.com/products/";
+            const query = new URLSearchParams(window.location.search);
+            const productId = query.get("q");
+
+            if (productId) {
+                fetch(API + productId)
+                    .then((res) => res.json())
+                    .then((data) => {
+                        let card = document.createElement("div");
+                        card.className = "card";
+                        card.innerHTML = `
+            <img src="${data.images[0]}" alt="">
+            <div>
+            <h3>${data.title}</h3>
+            <p>${data.description}</p>
+            <p><strong>Category:</strong> ${data.category}</p>
+            <p><strong>Price:</strong> $${data.price}</p>
+            </div>
+          `;
+                        wrap.append(card);
+                    })
+                    .catch(() => {
+                        wrap.innerHTML = "<p>Mahsulot topilmadi ☹️</p>";
+                    });
+            } else {
+                wrap.innerHTML = "<p>ID yo'q 😅</p>";
+            }
+        </script>
+    </body>
+</html>
