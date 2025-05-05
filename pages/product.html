@@ -26,14 +26,14 @@
                         let card = document.createElement("div");
                         card.className = "card";
                         card.innerHTML = `
-            <img src="${data.images[0]}" alt="">
-            <div>
-            <h3>${data.title}</h3>
-            <p>${data.description}</p>
-            <p><strong>Category:</strong> ${data.category}</p>
-            <p><strong>Price:</strong> $${data.price}</p>
-            </div>
-          `;
+              <img src="${data.images[0]}" alt="">
+              <div>
+              <h3>${data.title}</h3>
+              <p>${data.description}</p>
+              <p><strong>Category:</strong> ${data.category}</p>
+              <p><strong>Price:</strong> $${data.price}</p>
+              </div>
+            `;
                         wrap.append(card);
                     })
                     .catch(() => {

@@ -94,6 +94,24 @@ header .hd3 .row p b {
   margin-left: 5px;
   margin-top: 2px;
 }
+header .hd3 .categoryBar {
+  width: 1000px;
+  overflow: scroll;
+}
+header .hd3 .categoryBar::-webkit-scrollbar {
+  display: none;
+}
+header .hd3 .categoryBar .category-btn {
+  background-color: transparent;
+  border: none;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+header .hd3 .categoryBar .category-btn:hover {
+  box-shadow: 0 0 50px rgba(111, 0, 255, 0.6039215686);
+}
 
 .s1 .banner {
   display: flex;
@@ -244,6 +262,9 @@ footer .bottom p {
 .product .wrapper .card h3 {
   font-size: 30px;
   color: rgba(111, 0, 255, 0.5764705882);
+}
+.product .wrapper .card .category-btn {
+  display: flex;
 }
 
 * {
